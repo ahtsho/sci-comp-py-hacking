@@ -43,23 +43,26 @@ def testfibonacci():
     printTestName("Fibonacci")
     print "first 10 fibonacci numbers: ",fibonacciReduce(10),"\n"
 
+
 '''
-def flattenList(li):
-    if type(li,list)=='list':
-        for l in li:
-            flattenList()
-'''
-
-
-def testFlattenList():
-    printTestName("flattenList")
-    #print flattenList([[1,2,3],[4,[5,6,[7,8]]],[9],10])
-
-
 testLambdaSum()
 testMap()
 testFilter()
 testReduce()
 testfibonacci()
+'''
 
-#testFlattenList()
+def sqareRootBabylonian(a,n=10):
+    return reduce(lambda x, a: .5*(x+a/x),n*[a])
+
+print sqareRootBabylonian(17)
+
+f = lambda x, a: .5*(x+a/x)
+print f(f(f(f(f(f(f(f(17,17),17),17),17),17),17),17),17)
+'''
+ f(17,17)
+ f(9.0,17)
+ f(5.44444444444,17)
+ f(4.125,17)
+'''
+
